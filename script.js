@@ -51,6 +51,11 @@ function main(n) {
   gridContainer.addEventListener('contextmenu', function (e) {
     e.preventDefault();
   });
+
+  // let instructions = document.createElement('h1');
+  // instructions.textContent = 'Left click to draw, right click to erase.';
+  // instructionSection.appendChild(instructions);
 }
 
-main(16);
+let dimension = prompt('Enter the dimension of the grid:');
+main(dimension);
